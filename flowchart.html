@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Structure Flowchart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .flowchart-box {
+            border: 2px solid #2563EB;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+        }
+        .arrow {
+            text-align: center;
+            font-size: 24px;
+            color: #2563EB;
+            margin: 5px 0;
+        }
+        .container-box {
+            background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+        }
+        .section-box {
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-8 text-gray-800">Portfolio Website Structure Flowchart</h1>
+        
+        <!-- Start -->
+        <div class="flex justify-center mb-4">
+            <div class="flowchart-box container-box text-center">
+                <strong>Portfolio Website</strong>
+            </div>
+        </div>
+        
+        <div class="arrow">↓</div>
+        
+        <!-- Header Section -->
+        <div class="flex justify-center mb-4">
+            <div class="flowchart-box section-box">
+                <strong>Header Section</strong>
+                <ul class="text-sm mt-2 text-left">
+                    <li>• Enlarged Profile Picture</li>
+                    <li>• Name: NIKITHA</li>
+                    <li>• Navigation Menu</li>
+                    <li>• Social Links (GitHub, LinkedIn, Email)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="arrow">↓</div>
+        
+        <!-- Horizontal Navigation -->
+        <div class="flex justify-center mb-4">
+            <div class="flowchart-box container-box text-center">
+                <strong>Horizontal Slide Navigation</strong>
+                <p class="text-sm mt-2">(Left to Right)</p>
+            </div>
+        </div>
+        
+        <div class="arrow">↓</div>
+        
+        <!-- Main Content Sections -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+            <!-- About Section -->
+            <div class="flowchart-box section-box">
+                <strong>Section 1: About</strong>
+                <ul class="text-sm mt-2 text-left">
+                    <li>• Professional Summary</li>
+                    <li>• Skills Overview</li>
+                    <li>• Education</li>
+                </ul>
+            </div>
+            
+            <!-- Research Section -->
+            <div class="flowchart-box section-box">
+                <strong>Section 2: Research</strong>
+                <ul class="text-sm mt-2 text-left">
+                    <li>• Undergraduate Research Assistant</li>
+                    <li>• SRM University, Amaravati</li>
+                    <li>• StudyMate Project</li>
+                </ul>
+            </div>
+            
+            <!-- Projects Section -->
+            <div class="flowchart-box section-box">
+                <strong>Section 3: Projects</strong>
+                <ul class="text-sm mt-2 text-left">
+                    <li>• Insight Stream (Card)</li>
+                    <li>• Driver Drowsiness Detection (Card)</li>
+                    <li>• Online Grocery System (Card)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="arrow">↓</div>
+        
+        <!-- Contact Section -->
+        <div class="flex justify-center mb-4">
+            <div class="flowchart-box section-box">
+                <strong>Section 4: Contact</strong>
+                <ul class="text-sm mt-2 text-left">
+                    <li>• Contact Form</li>
+                    <li>• Social Media Links</li>
+                    <li>• Email Link</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="arrow">↓</div>
+        
+        <!-- Footer -->
+        <div class="flex justify-center mb-4">
+            <div class="flowchart-box container-box text-center">
+                <strong>Footer</strong>
+                <p class="text-sm mt-2">Copyright & Additional Links</p>
+            </div>
+        </div>
+        
+        <!-- Design Elements -->
+        <div class="mt-12 p-6 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Design Specifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold text-blue-600 mb-2">Color Scheme</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Primary Blue: #2563EB</li>
+                        <li>• Secondary Blue: #3B82F6</li>
+                        <li>• Light Blue: #DBEAFE</li>
+                        <li>• White: #FFFFFF</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-blue-600 mb-2">Features</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Horizontal Slide Navigation</li>
+                        <li>• Card-based Project Display</li>
+                        <li>• Mobile Responsive</li>
+                        <li>• Tailwind CSS Styling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Deployment Flow -->
+        <div class="mt-8 p-6 bg-white rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Deployment Flow</h2>
+            <div class="space-y-2">
+                <div class="flowchart-box container-box">
+                    <strong>1. Code Development</strong>
+                </div>
+                <div class="arrow">↓</div>
+                <div class="flowchart-box container-box">
+                    <strong>2. Push to GitHub</strong>
+                </div>
+                <div class="arrow">↓</div>
+                <div class="flowchart-box container-box">
+                    <strong>3. GitHub Actions Trigger</strong>
+                </div>
+                <div class="arrow">↓</div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flowchart-box section-box">
+                        <strong>GitHub Pages</strong>
+                        <p class="text-sm mt-2">Automated Deployment</p>
+                    </div>
+                    <div class="flowchart-box section-box">
+                        <strong>Vercel</strong>
+                        <p class="text-sm mt-2">Automated Deployment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
